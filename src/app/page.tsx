@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { siteConfig, categories, testimonials } from "@/data/menu";
+import { siteConfig, categories } from "@/data/menu";
 
 const features = [
   {
@@ -175,44 +175,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="section-rule" />
-      </div>
 
-      {/* ─── TESTIMONIALS ─── */}
-      <section className="py-16 sm:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-14 gap-4">
-            <div>
-              <p className="text-brand-500 font-medium text-sm tracking-wide uppercase mb-3">Customer reviews</p>
-              <h2 className="font-display text-2xl sm:text-3xl md:text-4xl text-espresso-700">
-                What people are saying
-              </h2>
-            </div>
-            <a
-              href={siteConfig.googleReviewsUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-espresso-600 hover:text-espresso-800 font-medium text-sm underline underline-offset-4 w-fit"
-            >
-              Read reviews on Google Maps
-            </a>
-          </div>
-
-          <div className="category-scroll flex gap-5 overflow-x-auto pb-4 -mx-4 px-4 sm:mx-0 sm:px-0">
-            {testimonials.map((t, i) => (
-              <div key={i} className="cafe-card rounded-lg p-6 min-w-[280px] max-w-[320px] flex-shrink-0 flex flex-col">
-                <p className="text-brand-500 text-sm font-medium mb-3">{"★".repeat(t.rating)}</p>
-                <p className="text-espresso-600 leading-relaxed flex-1 mb-5 text-[15px]">{t.text}</p>
-                <div>
-                  <p className="text-espresso-700 font-medium text-sm">{t.name}</p>
-                  <p className="text-espresso-400 text-xs">{t.date}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ─── CTA ─── */}
       <section className="py-16 sm:py-24 bg-espresso-700">

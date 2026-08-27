@@ -1,5 +1,5 @@
 import { siteConfig } from "@/data/menu";
-import { galleryImages } from "@/data/gallery";
+
 
 const values = [
   {
@@ -116,38 +116,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* ─── GALLERY (interior photos) ─── */}
-      <section className="py-16 sm:py-24 bg-sand-200 border-y border-espresso-700/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="mb-8 sm:mb-10">
-            <p className="text-brand-500 font-medium text-sm tracking-wide uppercase mb-3">Take a look inside</p>
-            <h2 className="font-display text-2xl sm:text-3xl md:text-4xl text-espresso-700">
-              Our cafe
-            </h2>
-            <p className="text-espresso-500 mt-3 max-w-xl text-[15px]">
-              Swap these for real photos of your dining area, kitchen, and counter — see
-              the note in <code className="text-espresso-700 bg-white border border-espresso-700/10 px-1.5 py-0.5 rounded text-sm">src/data/gallery.ts</code>.
-            </p>
-          </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 sm:gap-4">
-            {galleryImages.map((img, i) => (
-              <div
-                key={i}
-                className={`relative overflow-hidden rounded-lg ${i === 0 ? "col-span-2 row-span-2 aspect-square md:aspect-auto" : "aspect-square"
-                  }`}
-              >
-                <img
-                  src={img.src}
-                  alt={img.alt}
-                  className="w-full h-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* ─── VALUES ─── */}
       <section className="py-16 sm:py-24">
