@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:opsz,wght@9..144,300..700&display=swap');
+
+:root {
+  --font-display: "Fraunces", serif;
+  --font-body: "DM Sans", sans-serif;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background: #f7f2e9;
+  color: #2b211b;
+  overflow-x: hidden;
+}
+
+/* Hide scrollbar but allow scrolling */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth category scroll */
+.category-scroll {
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x proximity;
+}
+.category-scroll > * {
+  scroll-snap-align: start;
+}
+
+/* Plain, quiet surface used for cards — no blur, no glow */
+.cafe-card {
+  background: #fffdf9;
+  border: 1px solid rgba(43, 33, 27, 0.1);
+}
+
+/* Cart slide */
+.cart-slide-in {
+  animation: slideInRight 0.25s ease-out;
+}
+
+@keyframes slideInRight {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+/* Food card hover — a small, restrained lift */
+.food-card {
+  transition: border-color 0.2s ease;
+}
+.food-card:hover {
+  border-color: rgba(43, 33, 27, 0.22);
+}
+
+/* Veg indicator dot */
+.veg-dot {
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid #2e7d32;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+.veg-dot::after {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #2e7d32;
+}
+
+/* Non-veg indicator */
+.nonveg-dot {
+  width: 14px;
+  height: 14px;
+  border: 1.5px solid #a13a2e;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+.nonveg-dot::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-bottom: 6px solid #a13a2e;
+}
+
+/* Size selector buttons */
+.size-btn {
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+.size-btn.active {
+  background: #2b211b;
+  color: #fff;
+}
+
+/* Mobile bottom padding for sticky elements */
+@media (max-width: 640px) {
+  main {
+    padding-bottom: 76px;
+  }
+}
+
+/* Thin divider used instead of card borders/section backgrounds */
+.section-rule {
+  height: 1px;
+  background: rgba(43, 33, 27, 0.1);
+}
+
+/* Reduce motion for users who ask for it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
