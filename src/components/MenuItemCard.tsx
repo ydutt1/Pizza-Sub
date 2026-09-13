@@ -29,24 +29,35 @@ export default function MenuItemCard({ item }: MenuItemCardProps) {
   return (
     <div className="food-card cafe-card rounded-lg overflow-hidden flex flex-col">
       {/* Image */}
-      <div className="relative aspect-[4/3] overflow-hidden bg-sand-300">
-        <img
-          src={item.image}
-          alt={item.name}
-          className="w-full h-full object-cover"
-          loading="lazy"
-        />
-        {/* Veg/Non-veg indicator */}
-        <div className="absolute top-2.5 left-2.5">
-          <div className={item.isVeg !== false ? "veg-dot" : "nonveg-dot"} />
+      {item.image ? (
+        <div className="relative aspect-[4/3] overflow-hidden bg-sand-300">
+          <img
+            src={item.image}
+            alt={item.name}
+            className="w-full h-full object-cover"
+            loading="lazy"
+          />
+          {/* Veg/Non-veg indicator */}
+          <div className="absolute top-2.5 left-2.5">
+            <div className={item.isVeg !== false ? "veg-dot" : "nonveg-dot"} />
+          </div>
+          {/* Badge */}
+          {item.badge && (
+            <span className="absolute top-2.5 right-2.5 bg-espresso-700 text-white text-[10px] font-semibold px-2 py-1 rounded">
+              {item.badge}
+            </span>
+          )}
         </div>
-        {/* Badge */}
-        {item.badge && (
-          <span className="absolute top-2.5 right-2.5 bg-espresso-700 text-white text-[10px] font-semibold px-2 py-1 rounded">
-            {item.badge}
-          </span>
-        )}
-      </div>
+      ) : (
+        <div className="px-3.5 pt-3.5 flex items-center justify-between">
+          <div className={item.isVeg !== false ? "veg-dot relative" : "nonveg-dot relative"} />
+          {item.badge && (
+            <span className="bg-espresso-700 text-white text-[10px] font-semibold px-2 py-1 rounded">
+              {item.badge}
+            </span>
+          )}
+        </div>
+      )}
 
       {/* Content */}
       <div className="p-3.5 flex flex-col flex-1">
@@ -65,8 +76,8 @@ export default function MenuItemCard({ item }: MenuItemCardProps) {
                 key={size.label}
                 onClick={() => setSelectedSize(idx)}
                 className={`size-btn text-[11px] font-semibold px-2.5 py-1 rounded border ${selectedSize === idx
-                    ? "active border-espresso-700"
-                    : "bg-transparent text-espresso-500 border-espresso-700/15 hover:border-espresso-700/30"
+                  ? "active border-espresso-700"
+                  : "bg-transparent text-espresso-500 border-espresso-700/15 hover:border-espresso-700/30"
                   }`}
               >
                 {size.label} · ₹{size.price}

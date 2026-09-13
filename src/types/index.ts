@@ -9,7 +9,7 @@ export interface MenuItem {
   description: string;
   price: number;
   category: string;
-  image: string;
+  image?: string;
   badge?: string;
   sizes?: SizeOption[];
   isVeg?: boolean;
@@ -20,7 +20,7 @@ export interface CartItem {
   name: string;
   price: number;
   quantity: number;
-  image: string;
+  image?: string;
   selectedSize?: string;
 }
 

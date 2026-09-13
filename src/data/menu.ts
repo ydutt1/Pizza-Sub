@@ -100,9 +100,7 @@ export const categories: Category[] = [
   { id: "rolls", name: "🧆 Rolls", slug: "rolls", icon: "🧆" },
   { id: "cold-coffee-shakes", name: "☕ Coffee & Shakes", slug: "cold-coffee-shakes", icon: "☕" },
   { id: "mojito-icetea", name: "🍹 Mojito & Ice Tea", slug: "mojito-icetea", icon: "🍹" },
-  { id: "student-combos", name: "🎓 Student Special", slug: "student-combos", icon: "🎓" },
   { id: "easy-money", name: "💸 Easy Money", slug: "easy-money", icon: "💸" },
-  { id: "party-combos", name: "🎉 Party Combos", slug: "party-combos", icon: "🎉" },
 ];
 
 export const menuItems: MenuItem[] = [
@@ -115,7 +113,7 @@ export const menuItems: MenuItem[] = [
     description: "Cheese + onion / capsicum / sweet corn / tomato — single topping",
     price: 79,
     category: "pizzas",
-    image: img(IMG.pizza, 0),
+    image: "/images/menu/simply-veggie-pizza.png",
     isVeg: true,
     sizes: [
       { label: "S", price: 79 },
@@ -129,7 +127,7 @@ export const menuItems: MenuItem[] = [
     description: "Cheese + onion + capsicum + sweet corn topping",
     price: 110,
     category: "pizzas",
-    image: img(IMG.pizza, 1),
+    image: "/images/menu/veggie-delight.png",
     isVeg: true,
     sizes: [
       { label: "S", price: 110 },
@@ -143,7 +141,7 @@ export const menuItems: MenuItem[] = [
     description: "Overloaded with cheese on neapolitan style crust, perfectly baked & seasoned",
     price: 150,
     category: "pizzas",
-    image: img(IMG.pizza, 2),
+    image: "/images/menu/double-cheese-margarita.png",
     isVeg: true,
     sizes: [
       { label: "S", price: 150 },
@@ -157,7 +155,7 @@ export const menuItems: MenuItem[] = [
     description: "Cheese & BBQ mushroom pizza with fresh onion, capsicum + jalapeños",
     price: 210,
     category: "pizzas",
-    image: img(IMG.pizza, 3),
+    image: "/images/menu/funky-tandoori-mushroom.png",
     isVeg: true,
     sizes: [
       { label: "S", price: 210 },
@@ -171,7 +169,7 @@ export const menuItems: MenuItem[] = [
     description: "Paneer tikka chunks, onion, tomato, capsicum & cheese — a flavourful adventure",
     price: 150,
     category: "pizzas",
-    image: img(IMG.pizza, 4),
+    image: "/images/menu/tandoori-paneer-tikka.png",
     isVeg: true,
     sizes: [
       { label: "S", price: 150 },
@@ -199,7 +197,7 @@ export const menuItems: MenuItem[] = [
     description: "Cheese, paneer, baby corn, onion, capsicum, tomato, jalapeño, black olives & dressing",
     price: 179,
     category: "pizzas",
-    image: img(IMG.pizza, 0),
+    image: "/images/menu/everything-on-it.png",
     isVeg: true,
     sizes: [
       { label: "S", price: 179 },
@@ -213,7 +211,7 @@ export const menuItems: MenuItem[] = [
     description: "Cheese + spicy paneer + green chilly + jalapeño, red paprika & onion",
     price: 189,
     category: "pizzas",
-    image: img(IMG.pizza, 1),
+    image: "/images/menu/spicy-fire-pizza.png",
     isVeg: true,
     sizes: [
       { label: "S", price: 189 },
@@ -227,7 +225,7 @@ export const menuItems: MenuItem[] = [
     description: "Fresh onion, green chilly, paneer chunk, mushrooms, black olive — covered with cheese",
     price: 220,
     category: "pizzas",
-    image: img(IMG.pizza, 2),
+    image: "/images/menu/fantastic-italian.png",
     isVeg: true,
     sizes: [
       { label: "S", price: 220 },
@@ -241,7 +239,7 @@ export const menuItems: MenuItem[] = [
     description: "Cheese + jalapeño, tandoori sauce base, golden corn, red onion, red paprika & tomato chunks",
     price: 220,
     category: "pizzas",
-    image: img(IMG.pizza, 3),
+    image: "/images/menu/the-maxicano.png",
     isVeg: true,
     sizes: [
       { label: "S", price: 220 },
@@ -255,7 +253,7 @@ export const menuItems: MenuItem[] = [
     description: "Ring onion, tomato, jalapeño, black olive, paneer, red paprika, sweet corn dressing cheese",
     price: 229,
     category: "pizzas",
-    image: img(IMG.pizza, 4),
+    image: "/images/menu/king-choice-pizza.png",
     isVeg: true,
     sizes: [
       { label: "S", price: 229 },
@@ -267,40 +265,40 @@ export const menuItems: MenuItem[] = [
   // ═══════════════════════════════════════
   // 🌯 VEG WRAPS
   // ═══════════════════════════════════════
-  { id: "wrap-veggie-delite", name: "Veggie Delite Wrap", description: "Fresh veggies wrapped in a soft tortilla", price: 69, category: "wraps", image: img(IMG.wrap, 0), isVeg: true },
-  { id: "wrap-aloo-patty", name: "Aloo Patty Wrap", description: "Crispy aloo patty with fresh veggies & chutney", price: 79, category: "wraps", image: img(IMG.wrap, 1), isVeg: true },
-  { id: "wrap-veg-shammi", name: "Veg Shammi Kabab Wrap", description: "Flavourful shammi kabab in a warm tortilla", price: 79, category: "wraps", image: img(IMG.wrap, 0), isVeg: true },
-  { id: "wrap-veg-seekh", name: "Veg Sheek Kabab Wrap", description: "Spiced seekh kabab wrapped with onions & sauce", price: 79, category: "wraps", image: img(IMG.wrap, 1), isVeg: true },
-  { id: "wrap-hara-bhara", name: "Hara Bhara Kabab Wrap", description: "Green spinach & pea kabab wrapped in a soft tortilla", price: 79, category: "wraps", image: img(IMG.wrap, 0), isVeg: true },
-  { id: "wrap-falafel", name: "Falafel Kebab Wrap", description: "Crispy falafel with hummus & fresh veggies", price: 79, category: "wraps", image: img(IMG.wrap, 1), isVeg: true },
-  { id: "wrap-paneer-tikka", name: "Paneer Tikka Wrap", description: "Marinated paneer tikka with spicy sauce & veggies", price: 99, category: "wraps", image: img(IMG.wrap, 0), isVeg: true },
+  { id: "wrap-veggie-delite", name: "Veggie Delite Wrap", description: "Fresh veggies wrapped in a soft tortilla", price: 69, category: "wraps", image: "/images/menu/wrap-veggie-delite.png", isVeg: true },
+  { id: "wrap-aloo-patty", name: "Aloo Patty Wrap", description: "Crispy aloo patty with fresh veggies & chutney", price: 79, category: "wraps", image: "/images/menu/wrap-aloo-patty.png", isVeg: true },
+  { id: "wrap-veg-shammi", name: "Veg Shammi Kabab Wrap", description: "Flavourful shammi kabab in a warm tortilla", price: 79, category: "wraps", image: "/images/menu/wrap-veg-shammi.png", isVeg: true },
+  { id: "wrap-veg-seekh", name: "Veg Sheek Kabab Wrap", description: "Spiced seekh kabab wrapped with onions & sauce", price: 79, category: "wraps", image: "/images/menu/wrap-veg-seekh.png", isVeg: true },
+  { id: "wrap-hara-bhara", name: "Hara Bhara Kabab Wrap", description: "Green spinach & pea kabab wrapped in a soft tortilla", price: 79, category: "wraps", image: "/images/menu/wrap-hara-bhara.png", isVeg: true },
+  { id: "wrap-falafel", name: "Falafel Kebab Wrap", description: "Crispy falafel with hummus & fresh veggies", price: 79, category: "wraps", image: "/images/menu/wrap-falafel.png", isVeg: true },
+  { id: "wrap-paneer-tikka", name: "Paneer Tikka Wrap", description: "Marinated paneer tikka with spicy sauce & veggies", price: 99, category: "wraps", image: "/images/menu/wrap-paneer-tikka.png", isVeg: true },
 
   // ═══════════════════════════════════════
   // 🥖 VEG SUBS
   // ═══════════════════════════════════════
-  { id: "sub-veggie-delite", name: "Veggie Delite Sub", description: "Fresh garden veggies on a toasted sub roll", price: 99, category: "subs", image: img(IMG.sub, 0), isVeg: true },
-  { id: "sub-aloo-patty", name: "Aloo Patty Sub", description: "Crispy aloo patty with fresh fillings on sub roll", price: 140, category: "subs", image: img(IMG.sub, 1), isVeg: true },
-  { id: "sub-corn-peas", name: "Corn & Peas Sub", description: "Sweet corn & peas filling with special sauce", price: 140, category: "subs", image: img(IMG.sub, 0), isVeg: true },
-  { id: "sub-hara-bhara", name: "Hara Bhara Kabab Sub", description: "Green kabab patty on a toasted sub roll", price: 130, category: "subs", image: img(IMG.sub, 1), isVeg: true },
-  { id: "sub-veg-shammi", name: "Veg Shammi Kabab Sub", description: "Flavourful shammi kabab on a fresh sub roll", price: 140, category: "subs", image: img(IMG.sub, 0), isVeg: true },
-  { id: "sub-paneer-tikka", name: "Paneer Tikka Sub", description: "Marinated paneer tikka with spicy sauce & cheese", price: 150, category: "subs", image: img(IMG.sub, 1), isVeg: true },
+  { id: "sub-veggie-delite", name: "Veggie Delite Sub", description: "Fresh garden veggies on a toasted sub roll", price: 99, category: "subs", image: "/images/menu/sub-veggie-delite.png", isVeg: true },
+  { id: "sub-aloo-patty", name: "Aloo Patty Sub", description: "Crispy aloo patty with fresh fillings on sub roll", price: 140, category: "subs", image: "/images/menu/sub-aloo-patty.png", isVeg: true },
+  { id: "sub-corn-peas", name: "Corn & Peas Sub", description: "Sweet corn & peas filling with special sauce", price: 140, category: "subs", image: "/images/menu/sub-corn-peas.png", isVeg: true },
+  { id: "sub-hara-bhara", name: "Hara Bhara Kabab Sub", description: "Green kabab patty on a toasted sub roll", price: 130, category: "subs", image: "/images/menu/sub-hara-bhara.png", isVeg: true },
+  { id: "sub-veg-shammi", name: "Veg Shammi Kabab Sub", description: "Flavourful shammi kabab on a fresh sub roll", price: 140, category: "subs", image: "/images/menu/sub-veg-shammi.png", isVeg: true },
+  { id: "sub-paneer-tikka", name: "Paneer Tikka Sub", description: "Marinated paneer tikka with spicy sauce & cheese", price: 150, category: "subs", image: "/images/menu/sub-paneer-tikka.png", isVeg: true },
   { id: "sub-fala-fel", name: "Fala Fel Sub", description: "Crispy falafel with hummus & fresh veggies on sub", price: 150, category: "subs", image: img(IMG.sub, 0), isVeg: true },
-  { id: "sub-veg-seekh", name: "Veg Seekh Kabab Sub", description: "Spiced seekh kabab on a hearty sub roll", price: 150, category: "subs", image: img(IMG.sub, 1), isVeg: true },
+  { id: "sub-veg-seekh", name: "Veg Seekh Kabab Sub", description: "Spiced seekh kabab on a hearty sub roll", price: 150, category: "subs", image: "/images/menu/sub-veg-seekh.png", isVeg: true },
 
   // ═══════════════════════════════════════
   // 🥪 SANDWICHES
   // ═══════════════════════════════════════
   { id: "sandwich-classic-veg", name: "Classic Veg Sandwich", description: "Fresh veggies with butter & chutney on toasted bread", price: 69, category: "sandwiches", image: img(IMG.sandwich, 0), isVeg: true },
-  { id: "sandwich-bombay-street", name: "Bombay Street Sandwich", description: "Mumbai-style masala sandwich with tangy chutney", price: 79, category: "sandwiches", image: img(IMG.sandwich, 1), isVeg: true },
-  { id: "sandwich-cottage-cheese", name: "Cottage Cheese Sandwich", description: "Creamy cottage cheese with herbs on grilled bread", price: 109, category: "sandwiches", image: img(IMG.sandwich, 0), isVeg: true },
-  { id: "sandwich-tandoori-cheese", name: "Tandoori Cheese Sandwich", description: "Tandoori spiced cheese filling on toasted bread", price: 100, category: "sandwiches", image: img(IMG.sandwich, 1), isVeg: true },
+  { id: "sandwich-bombay-street", name: "Bombay Street Sandwich", description: "Mumbai-style masala sandwich with tangy chutney", price: 79, category: "sandwiches", image: "/images/menu/sandwich-bombay-street.png", isVeg: true },
+  { id: "sandwich-cottage-cheese", name: "Cottage Cheese Sandwich", description: "Creamy cottage cheese with herbs on grilled bread", price: 109, category: "sandwiches", image: "/images/menu/sandwich-cottage-cheese.png", isVeg: true },
+  { id: "sandwich-tandoori-cheese", name: "Tandoori Cheese Sandwich", description: "Tandoori spiced cheese filling on toasted bread", price: 100, category: "sandwiches", image: "/images/menu/sandwich-tandoori-cheese.png", isVeg: true },
 
   // ═══════════════════════════════════════
   // 🍔 BURGERS
   // ═══════════════════════════════════════
-  { id: "burger-aloo-patty", name: "Aloo Patty Burger", description: "Crispy aloo patty with lettuce, tomato & special sauce", price: 60, category: "burgers", image: img(IMG.burger, 0), isVeg: true },
-  { id: "burger-veg-patty", name: "Veg Patty Burger", description: "Crunchy veg patty with fresh veggies & mayo", price: 79, category: "burgers", image: img(IMG.burger, 1), isVeg: true },
-  { id: "burger-paneer-patty", name: "Paneer Patty Burger", description: "Spiced paneer patty with cheese, lettuce & tandoori mayo", price: 120, category: "burgers", image: img(IMG.burger, 2), isVeg: true },
+  { id: "burger-aloo-patty", name: "Aloo Patty Burger", description: "Crispy aloo patty with lettuce, tomato & special sauce", price: 60, category: "burgers", image: "/images/menu/burger-aloo-patty.png", isVeg: true },
+  { id: "burger-veg-patty", name: "Veg Patty Burger", description: "Crunchy veg patty with fresh veggies & mayo", price: 79, category: "burgers", image: "/images/menu/burger-veg-patty.png", isVeg: true },
+  { id: "burger-paneer-patty", name: "Paneer Patty Burger", description: "Spiced paneer patty with cheese, lettuce & tandoori mayo", price: 120, category: "burgers", image: "/images/menu/burger-paneer-patty.png", isVeg: true },
 
   // ═══════════════════════════════════════
   // 🥗 VEG SALADS
@@ -317,22 +315,22 @@ export const menuItems: MenuItem[] = [
   // ═══════════════════════════════════════
   // 🍞 SIDES
   // ═══════════════════════════════════════
-  { id: "side-garlic-bread-plain", name: "Garlic Bread Stick (Plain Cheese)", description: "Toasted bread sticks with garlic butter & melted cheese", price: 89, category: "sides", image: img(IMG.sides, 0), isVeg: true },
-  { id: "side-garlic-bread-corn", name: "Garlic Bread Stick (Corn + Jalapeño)", description: "Cheese bread with sweet corn, cheese & spicy jalapeño", price: 99, category: "sides", image: img(IMG.sides, 0), isVeg: true },
-  { id: "side-garlic-bread-paneer", name: "Garlic Bread Stick (Cheese + Paneer)", description: "Loaded with paneer crumbles, cheese & garlic butter", price: 109, category: "sides", image: img(IMG.sides, 0), isVeg: true },
-  { id: "side-cheese-dip", name: "Cheese Dip", description: "Creamy cheese dip — perfect with garlic bread", price: 30, category: "sides", image: img(IMG.sides, 1), isVeg: true },
+  { id: "side-garlic-bread-plain", name: "Garlic Bread Stick (Plain Cheese)", description: "Toasted bread sticks with garlic butter & melted cheese", price: 89, category: "sides", image: "/images/menu/side-garlic-bread-plain.png", isVeg: true },
+  { id: "side-garlic-bread-corn", name: "Garlic Bread Stick (Corn + Jalapeño)", description: "Cheese bread with sweet corn, cheese & spicy jalapeño", price: 99, category: "sides", image: "/images/menu/side-garlic-bread-corn.png", isVeg: true },
+  { id: "side-garlic-bread-paneer", name: "Garlic Bread Stick (Cheese + Paneer)", description: "Loaded with paneer crumbles, cheese & garlic butter", price: 109, category: "sides", image: "/images/menu/side-garlic-bread-paneer.png", isVeg: true },
+  { id: "side-cheese-dip", name: "Cheese Dip", description: "Creamy cheese dip — perfect with garlic bread", price: 30, category: "sides", image: "/images/menu/side-cheese-dip.png", isVeg: true },
   { id: "side-choco-lava", name: "Choco Lava Cake", description: "Warm chocolate cake with molten lava center", price: 69, category: "sides", image: img(IMG.sides, 1), isVeg: true },
 
   // ═══════════════════════════════════════
   // 🍜 NOODLES (Half / Full)
   // ═══════════════════════════════════════
-  { id: "noodles-veg", name: "Veg Noodles", description: "Stir-fried noodles with fresh vegetables", price: 60, category: "noodles", image: img(IMG.noodles, 0), isVeg: true, sizes: [{ label: "Half", price: 60 }, { label: "Full", price: 110 }] },
-  { id: "noodles-hakka", name: "Hakka Noodles", description: "Classic Indo-Chinese hakka noodles with veggies", price: 60, category: "noodles", image: img(IMG.noodles, 1), isVeg: true, sizes: [{ label: "Half", price: 60 }, { label: "Full", price: 110 }] },
-  { id: "noodles-chilli-garlic", name: "Chilli Garlic Noodles", description: "Spicy chilli garlic flavored noodles with veggies", price: 80, category: "noodles", image: img(IMG.noodles, 0), isVeg: true, sizes: [{ label: "Half", price: 80 }, { label: "Full", price: 140 }] },
-  { id: "noodles-sehezwan", name: "Sehezwan Noodles", description: "Fiery schezwan sauce tossed noodles with vegetables", price: 90, category: "noodles", image: img(IMG.noodles, 1), isVeg: true, sizes: [{ label: "Half", price: 90 }, { label: "Full", price: 160 }] },
-  { id: "noodles-homestyle", name: "Homestyle Noodles", description: "Comfort-style noodles with homestyle seasoning", price: 70, category: "noodles", image: img(IMG.noodles, 0), isVeg: true, sizes: [{ label: "Half", price: 70 }, { label: "Full", price: 130 }] },
-  { id: "noodles-hongkong", name: "Hongkong Noodles", description: "Crispy Hongkong-style noodles with spicy sauce", price: 120, category: "noodles", image: img(IMG.noodles, 1), isVeg: true, sizes: [{ label: "Half", price: 120 }, { label: "Full", price: 200 }] },
-  { id: "noodles-singapuri", name: "Singapuri Noodles", description: "Spiced Singapore-style stir-fried rice noodles", price: 70, category: "noodles", image: img(IMG.noodles, 0), isVeg: true, sizes: [{ label: "Half", price: 70 }, { label: "Full", price: 130 }] },
+  { id: "noodles-veg", name: "Veg Noodles", description: "Stir-fried noodles with fresh vegetables", price: 60, category: "noodles", image: "/images/menu/noodles-veg.png", isVeg: true, sizes: [{ label: "Half", price: 60 }, { label: "Full", price: 110 }] },
+  { id: "noodles-hakka", name: "Hakka Noodles", description: "Classic Indo-Chinese hakka noodles with veggies", price: 60, category: "noodles", image: "/images/menu/noodles-hakka.png", isVeg: true, sizes: [{ label: "Half", price: 60 }, { label: "Full", price: 110 }] },
+  { id: "noodles-chilli-garlic", name: "Chilli Garlic Noodles", description: "Spicy chilli garlic flavored noodles with veggies", price: 80, category: "noodles", image: "/images/menu/noodles-chilli-garlic.png", isVeg: true, sizes: [{ label: "Half", price: 80 }, { label: "Full", price: 140 }] },
+  { id: "noodles-sehezwan", name: "Sehezwan Noodles", description: "Fiery schezwan sauce tossed noodles with vegetables", price: 90, category: "noodles", image: "/images/menu/noodles-sehezwan.png", isVeg: true, sizes: [{ label: "Half", price: 90 }, { label: "Full", price: 160 }] },
+  { id: "noodles-homestyle", name: "Homestyle Noodles", description: "Comfort-style noodles with homestyle seasoning", price: 70, category: "noodles", image: "/images/menu/noodles-homestyle.png", isVeg: true, sizes: [{ label: "Half", price: 70 }, { label: "Full", price: 130 }] },
+  { id: "noodles-hongkong", name: "Hongkong Noodles", description: "Crispy Hongkong-style noodles with spicy sauce", price: 120, category: "noodles", image: "/images/menu/noodles-hongkong.png", isVeg: true, sizes: [{ label: "Half", price: 120 }, { label: "Full", price: 200 }] },
+  { id: "noodles-singapuri", name: "Singapuri Noodles", description: "Spiced Singapore-style stir-fried rice noodles", price: 70, category: "noodles", image: "/images/menu/noodles-singapuri.png", isVeg: true, sizes: [{ label: "Half", price: 70 }, { label: "Full", price: 130 }] },
 
   // ═══════════════════════════════════════
   // 🍚 FRIED RICE (Half / Full)
@@ -348,28 +346,28 @@ export const menuItems: MenuItem[] = [
   // ═══════════════════════════════════════
   // 🥟 MOMOS (Half / Full)
   // ═══════════════════════════════════════
-  { id: "momos-veg-steam", name: "Veg Momos (Steam)", description: "Soft steamed dumplings with veggie filling & spicy chutney", price: 40, category: "momos", image: img(IMG.momos, 0), isVeg: true, sizes: [{ label: "Half", price: 40 }, { label: "Full", price: 80 }] },
-  { id: "momos-veg-fry", name: "Veg Momos (Fry)", description: "Crispy fried dumplings with veggie filling & chutney", price: 50, category: "momos", image: img(IMG.momos, 1), isVeg: true, sizes: [{ label: "Half", price: 50 }, { label: "Full", price: 90 }] },
-  { id: "momos-paneer-steam", name: "Paneer Momos (Steam)", description: "Steamed dumplings with rich paneer stuffing", price: 50, category: "momos", image: img(IMG.momos, 0), isVeg: true, sizes: [{ label: "Half", price: 50 }, { label: "Full", price: 100 }] },
-  { id: "momos-paneer-fry", name: "Paneer Momos (Fry)", description: "Crispy fried paneer stuffed dumplings", price: 60, category: "momos", image: img(IMG.momos, 1), isVeg: true, sizes: [{ label: "Half", price: 60 }, { label: "Full", price: 110 }] },
-  { id: "momos-veg-kurkure", name: "Veg Kurkure Momos", description: "Extra crunchy kurkure coated veg momos", price: 110, category: "momos", image: img(IMG.momos, 0), isVeg: true },
-  { id: "momos-paneer-kurkure", name: "Paneer Kurkure Momos", description: "Extra crunchy kurkure coated paneer momos", price: 130, category: "momos", image: img(IMG.momos, 1), isVeg: true },
-  { id: "momos-veg-chilli", name: "Veg Chilli Momos", description: "Tossed in spicy chilli sauce — Indo-Chinese style", price: 100, category: "momos", image: img(IMG.momos, 0), isVeg: true },
-  { id: "momos-paneer-chilli", name: "Paneer Chilli Momos", description: "Paneer momos tossed in hot chilli sauce", price: 120, category: "momos", image: img(IMG.momos, 1), isVeg: true },
-  { id: "momos-veg-tandoori", name: "Veg Tandoori Momos", description: "Smoky tandoori grilled veg momos with chutney", price: 120, category: "momos", image: img(IMG.momos, 0), isVeg: true },
-  { id: "momos-paneer-tandoori", name: "Paneer Tandoori Momos", description: "Smoky tandoori grilled paneer momos", price: 120, category: "momos", image: img(IMG.momos, 1), isVeg: true },
+  { id: "momos-veg-steam", name: "Veg Momos (Steam)", description: "Soft steamed dumplings with veggie filling & spicy chutney", price: 40, category: "momos", image: "/images/menu/momos-veg-steam.png", isVeg: true, sizes: [{ label: "Half", price: 40 }, { label: "Full", price: 80 }] },
+  { id: "momos-veg-fry", name: "Veg Momos (Fry)", description: "Crispy fried dumplings with veggie filling & chutney", price: 50, category: "momos", image: "/images/menu/momos-veg-fry.png", isVeg: true, sizes: [{ label: "Half", price: 50 }, { label: "Full", price: 90 }] },
+  { id: "momos-paneer-steam", name: "Paneer Momos (Steam)", description: "Steamed dumplings with rich paneer stuffing", price: 50, category: "momos", image: "/images/menu/momos-paneer-steam.png", isVeg: true, sizes: [{ label: "Half", price: 50 }, { label: "Full", price: 100 }] },
+  { id: "momos-paneer-fry", name: "Paneer Momos (Fry)", description: "Crispy fried paneer stuffed dumplings", price: 60, category: "momos", image: "/images/menu/momos-paneer-fry.png", isVeg: true, sizes: [{ label: "Half", price: 60 }, { label: "Full", price: 110 }] },
+  { id: "momos-veg-kurkure", name: "Veg Kurkure Momos", description: "Extra crunchy kurkure coated veg momos", price: 110, category: "momos", image: "/images/menu/momos-veg-kurkure.png", isVeg: true },
+  { id: "momos-paneer-kurkure", name: "Paneer Kurkure Momos", description: "Extra crunchy kurkure coated paneer momos", price: 130, category: "momos", image: "/images/menu/momos-paneer-kurkure.png", isVeg: true },
+  { id: "momos-veg-chilli", name: "Veg Chilli Momos", description: "Tossed in spicy chilli sauce — Indo-Chinese style", price: 100, category: "momos", image: "/images/menu/momos-veg-chilli.png", isVeg: true },
+  { id: "momos-paneer-chilli", name: "Paneer Chilli Momos", description: "Paneer momos tossed in hot chilli sauce", price: 120, category: "momos", image: "/images/menu/momos-paneer-chilli.png", isVeg: true },
+  { id: "momos-veg-tandoori", name: "Veg Tandoori Momos", description: "Smoky tandoori grilled veg momos with chutney", price: 120, category: "momos", image: "/images/menu/momos-veg-tandoori.png", isVeg: true },
+  { id: "momos-paneer-tandoori", name: "Paneer Tandoori Momos", description: "Smoky tandoori grilled paneer momos", price: 120, category: "momos", image: "/images/menu/momos-paneer-tandoori.png", isVeg: true },
 
   // ═══════════════════════════════════════
   // 🔥 STARTERS (Half / Full)
   // ═══════════════════════════════════════
-  { id: "starter-chilli-potato", name: "Chilli Potato", description: "Crispy potato fingers tossed in spicy chilli sauce", price: 60, category: "starters", image: img(IMG.starter, 0), isVeg: true, sizes: [{ label: "Half", price: 60 }, { label: "Full", price: 110 }] },
-  { id: "starter-honey-chilli-potato", name: "Honey Chilli Potato", description: "Sweet & spicy honey glazed crispy potato fingers", price: 70, category: "starters", image: img(IMG.starter, 1), isVeg: true, sizes: [{ label: "Half", price: 70 }, { label: "Full", price: 130 }] },
-  { id: "starter-mushroom-chilli", name: "Mushroom Chilli", description: "Button mushrooms tossed in hot chilli sauce", price: 80, category: "starters", image: img(IMG.starter, 0), isVeg: true, sizes: [{ label: "Half", price: 80 }, { label: "Full", price: 150 }] },
-  { id: "starter-soya-chilli", name: "Soya Chilli", description: "Crispy soya chunks in spicy Indo-Chinese chilli sauce", price: 60, category: "starters", image: img(IMG.starter, 1), isVeg: true, sizes: [{ label: "Half", price: 60 }, { label: "Full", price: 110 }] },
-  { id: "starter-paneer-65", name: "Paneer 65", description: "Spiced & deep-fried paneer cubes — restaurant style", price: 240, category: "starters", image: img(IMG.starter, 0), isVeg: true },
-  { id: "starter-veg-manchurian", name: "Veg Manchurian (Dry/Gravy)", description: "Crispy veg balls in spicy manchurian sauce", price: 90, category: "starters", image: img(IMG.starter, 1), isVeg: true, sizes: [{ label: "Half", price: 90 }, { label: "Full", price: 160 }] },
-  { id: "starter-crispy-corn", name: "Crispy Corn", description: "Golden fried corn kernels with spicy seasoning", price: 70, category: "starters", image: img(IMG.starter, 0), isVeg: true, sizes: [{ label: "Half", price: 70 }, { label: "Full", price: 130 }] },
-  { id: "starter-chilli-paneer", name: "Chilli Paneer (Dry/Gravy)", description: "Soft paneer cubes in fiery chilli sauce with peppers", price: 130, category: "starters", image: img(IMG.starter, 1), isVeg: true, sizes: [{ label: "Half", price: 130 }, { label: "Full", price: 240 }] },
+  { id: "starter-chilli-potato", name: "Chilli Potato", description: "Crispy potato fingers tossed in spicy chilli sauce", price: 60, category: "starters", image: "/images/menu/starter-chilli-potato.png", isVeg: true, sizes: [{ label: "Half", price: 60 }, { label: "Full", price: 110 }] },
+  { id: "starter-honey-chilli-potato", name: "Honey Chilli Potato", description: "Sweet & spicy honey glazed crispy potato fingers", price: 70, category: "starters", image: "/images/menu/starter-honey-chilli-potato.png", isVeg: true, sizes: [{ label: "Half", price: 70 }, { label: "Full", price: 130 }] },
+  { id: "starter-mushroom-chilli", name: "Mushroom Chilli", description: "Button mushrooms tossed in hot chilli sauce", price: 80, category: "starters", image: "/images/menu/starter-mushroom-chilli.png", isVeg: true, sizes: [{ label: "Half", price: 80 }, { label: "Full", price: 150 }] },
+  { id: "starter-soya-chilli", name: "Soya Chilli", description: "Crispy soya chunks in spicy Indo-Chinese chilli sauce", price: 60, category: "starters", image: "/images/menu/starter-soya-chilli.png", isVeg: true, sizes: [{ label: "Half", price: 60 }, { label: "Full", price: 110 }] },
+  { id: "starter-paneer-65", name: "Paneer 65", description: "Spiced & deep-fried paneer cubes — restaurant style", price: 240, category: "starters", image: "/images/menu/starter-paneer-65.png", isVeg: true },
+  { id: "starter-veg-manchurian", name: "Veg Manchurian (Dry/Gravy)", description: "Crispy veg balls in spicy manchurian sauce", price: 90, category: "starters", image: "/images/menu/starter-veg-manchurian.png", isVeg: true, sizes: [{ label: "Half", price: 90 }, { label: "Full", price: 160 }] },
+  { id: "starter-crispy-corn", name: "Crispy Corn", description: "Golden fried corn kernels with spicy seasoning", price: 70, category: "starters", image: "/images/menu/starter-crispy-corn.png", isVeg: true, sizes: [{ label: "Half", price: 70 }, { label: "Full", price: 130 }] },
+  { id: "starter-chilli-paneer", name: "Chilli Paneer (Dry/Gravy)", description: "Soft paneer cubes in fiery chilli sauce with peppers", price: 130, category: "starters", image: "/images/menu/starter-chilli-paneer.png", isVeg: true, sizes: [{ label: "Half", price: 130 }, { label: "Full", price: 240 }] },
 
   // ═══════════════════════════════════════
   // 🍲 SOUPS
@@ -378,100 +376,56 @@ export const menuItems: MenuItem[] = [
   { id: "soup-manchow", name: "Veg Manchow Soup", description: "Spicy Indo-Chinese manchow with crispy noodles on top", price: 70, category: "soups", image: img(IMG.soup, 1), isVeg: true },
   { id: "soup-hot-chilli", name: "Hot & Chilli Soup", description: "Fiery hot soup with chilli flakes & vegetables", price: 100, category: "soups", image: img(IMG.soup, 0), isVeg: true },
   { id: "soup-lemonade-coriander", name: "Lemonade Coriander Soup", description: "Refreshing lemon coriander soup — light & tangy", price: 100, category: "soups", image: img(IMG.soup, 1), isVeg: true },
-  { id: "soup-sweet-corn", name: "Sweet Corn Soup", description: "Creamy sweet corn soup with fresh vegetables", price: 90, category: "soups", image: img(IMG.soup, 0), isVeg: true },
+  { id: "soup-sweet-corn", name: "Sweet Corn Soup", description: "Creamy sweet corn soup with fresh vegetables", price: 90, category: "soups", image: "/images/menu/soup-sweet-corn.png", isVeg: true },
 
   // ═══════════════════════════════════════
   // 🫕 TANDOORI (Half / Full)
   // ═══════════════════════════════════════
   { id: "tandoori-mushroom-tikka", name: "Mushroom Tikka Fries", description: "Tandoor grilled mushrooms with crispy fries", price: 120, category: "tandoori", image: img(IMG.tandoori, 0), isVeg: true, sizes: [{ label: "Half", price: 120 }, { label: "Full", price: 200 }] },
   { id: "tandoori-paneer-malai", name: "Paneer Malai Tikka", description: "Creamy malai marinated paneer grilled in tandoor", price: 130, category: "tandoori", image: img(IMG.tandoori, 1), isVeg: true, sizes: [{ label: "Half", price: 130 }, { label: "Full", price: 220 }] },
-  { id: "tandoori-veg-malai-momos", name: "Veg Malai Momos", description: "Creamy malai coated momos grilled to perfection", price: 90, category: "tandoori", image: img(IMG.tandoori, 0), isVeg: true, sizes: [{ label: "Half", price: 90 }, { label: "Full", price: 180 }] },
-  { id: "tandoori-paneer-malai-momos", name: "Paneer Malai Momos", description: "Rich paneer momos in creamy malai tandoori marinade", price: 120, category: "tandoori", image: img(IMG.tandoori, 1), isVeg: true, sizes: [{ label: "Half", price: 120 }, { label: "Full", price: 210 }] },
+  { id: "tandoori-veg-malai-momos", name: "Veg Malai Momos", description: "Creamy malai coated momos grilled to perfection", price: 90, category: "tandoori", image: "/images/menu/tandoori-veg-malai-momos.png", isVeg: true, sizes: [{ label: "Half", price: 90 }, { label: "Full", price: 180 }] },
+  { id: "tandoori-paneer-malai-momos", name: "Paneer Malai Momos", description: "Rich paneer momos in creamy malai tandoori marinade", price: 120, category: "tandoori", image: "/images/menu/tandoori-paneer-malai-momos.png", isVeg: true, sizes: [{ label: "Half", price: 120 }, { label: "Full", price: 210 }] },
 
   // ═══════════════════════════════════════
   // 🧆 ROLLS
   // ═══════════════════════════════════════
-  { id: "roll-veg", name: "Veg Roll", description: "Fresh veggies rolled in a flaky paratha", price: 50, category: "rolls", image: img(IMG.roll, 0), isVeg: true },
-  { id: "roll-single-egg", name: "Single Egg Roll", description: "Egg omelette wrapped in a flaky paratha", price: 60, category: "rolls", image: img(IMG.roll, 1) },
-  { id: "roll-double-egg", name: "Double Egg Roll", description: "Double egg stuffed roll with onions & chutney", price: 70, category: "rolls", image: img(IMG.roll, 0) },
-  { id: "roll-triple-egg", name: "Triple Egg Roll", description: "Loaded triple egg roll for egg lovers", price: 80, category: "rolls", image: img(IMG.roll, 1) },
-  { id: "roll-paneer", name: "Paneer Roll", description: "Spiced paneer filling in a crispy paratha roll", price: 90, category: "rolls", image: img(IMG.roll, 0), isVeg: true },
-  { id: "roll-paneer-tikka", name: "Paneer Tikka Roll", description: "Tandoori paneer tikka in a flaky roll", price: 160, category: "rolls", image: img(IMG.roll, 1), isVeg: true },
-  { id: "roll-veg-manchurian", name: "Veg Manchurian Roll", description: "Manchurian balls wrapped in a crispy roll", price: 100, category: "rolls", image: img(IMG.roll, 0), isVeg: true },
-  { id: "roll-paneer-egg", name: "Paneer Egg Roll", description: "Paneer & egg combo wrapped in flaky paratha", price: 100, category: "rolls", image: img(IMG.roll, 1) },
-  { id: "roll-veg-noodles", name: "Veg Noodles Roll", description: "Stir-fried noodles packed in a crispy roll", price: 70, category: "rolls", image: img(IMG.roll, 0), isVeg: true },
-  { id: "roll-paneer-noodles", name: "Paneer Noodles Roll", description: "Paneer noodles filling in a warm roll", price: 90, category: "rolls", image: img(IMG.roll, 1), isVeg: true },
-  { id: "roll-veg-spring", name: "Veg Spring Roll (2pcs)", description: "Crispy fried spring rolls with veggie filling", price: 80, category: "rolls", image: img(IMG.roll, 0), isVeg: true },
-  { id: "roll-paneer-spring", name: "Paneer Spring Roll (2pcs)", description: "Crispy spring rolls stuffed with spiced paneer", price: 120, category: "rolls", image: img(IMG.roll, 1), isVeg: true },
+  { id: "roll-veg", name: "Veg Roll", description: "Fresh veggies rolled in a flaky paratha", price: 50, category: "rolls", image: "/images/menu/roll-veg.png", isVeg: true },
+  { id: "roll-single-egg", name: "Single Egg Roll", description: "Egg omelette wrapped in a flaky paratha", price: 60, category: "rolls", image: "/images/menu/roll-single-egg.png" },
+  { id: "roll-double-egg", name: "Double Egg Roll", description: "Double egg stuffed roll with onions & chutney", price: 70, category: "rolls", image: "/images/menu/roll-double-egg.png" },
+  { id: "roll-triple-egg", name: "Triple Egg Roll", description: "Loaded triple egg roll for egg lovers", price: 80, category: "rolls", image: "/images/menu/roll-triple-egg.png" },
+  { id: "roll-paneer", name: "Paneer Roll", description: "Spiced paneer filling in a crispy paratha roll", price: 90, category: "rolls", image: "/images/menu/roll-paneer.png", isVeg: true },
+  { id: "roll-paneer-tikka", name: "Paneer Tikka Roll", description: "Tandoori paneer tikka in a flaky roll", price: 160, category: "rolls", image: "/images/menu/roll-paneer-tikka.png", isVeg: true },
+  { id: "roll-veg-manchurian", name: "Veg Manchurian Roll", description: "Manchurian balls wrapped in a crispy roll", price: 100, category: "rolls", image: "/images/menu/roll-veg-manchurian.png", isVeg: true },
+  { id: "roll-paneer-egg", name: "Paneer Egg Roll", description: "Paneer & egg combo wrapped in flaky paratha", price: 100, category: "rolls", image: "/images/menu/roll-paneer-egg.png" },
+  { id: "roll-veg-noodles", name: "Veg Noodles Roll", description: "Stir-fried noodles packed in a crispy roll", price: 70, category: "rolls", image: "/images/menu/roll-veg-noodles.png", isVeg: true },
+  { id: "roll-paneer-noodles", name: "Paneer Noodles Roll", description: "Paneer noodles filling in a warm roll", price: 90, category: "rolls", image: "/images/menu/roll-paneer-noodles.png", isVeg: true },
+  { id: "roll-veg-spring", name: "Veg Spring Roll (2pcs)", description: "Crispy fried spring rolls with veggie filling", price: 80, category: "rolls", image: "/images/menu/roll-veg-spring.png", isVeg: true },
+  { id: "roll-paneer-spring", name: "Paneer Spring Roll (2pcs)", description: "Crispy spring rolls stuffed with spiced paneer", price: 120, category: "rolls", image: "/images/menu/roll-paneer-spring.png", isVeg: true },
 
   // ═══════════════════════════════════════
   // ☕ COLD COFFEE & MILK SHAKES (S / R)
   // ═══════════════════════════════════════
-  { id: "drink-cold-coffee", name: "Cold Coffee Special", description: "Rich & creamy cold coffee blended to perfection", price: 39, category: "cold-coffee-shakes", image: img(IMG.coffee, 0), isVeg: true, sizes: [{ label: "S", price: 39 }, { label: "R", price: 59 }] },
-  { id: "drink-hazelnuts-coffee", name: "Hazelnuts Cold Coffee", description: "Cold coffee with rich hazelnut flavour", price: 49, category: "cold-coffee-shakes", image: img(IMG.coffee, 1), isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
-  { id: "drink-caramel-coffee", name: "Caramel Cold Coffee", description: "Sweet caramel swirl cold coffee", price: 49, category: "cold-coffee-shakes", image: img(IMG.coffee, 0), isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
-  { id: "drink-oreo-shake", name: "Oreo Shake", description: "Thick & creamy Oreo cookie milkshake", price: 49, category: "cold-coffee-shakes", image: img(IMG.shake, 0), isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
-  { id: "drink-vanilla-shake", name: "Vanilla Milk Shake", description: "Classic vanilla milkshake — smooth & creamy", price: 49, category: "cold-coffee-shakes", image: img(IMG.shake, 1), isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
-  { id: "drink-chocolate-shake", name: "Chocolate Milk Shake", description: "Rich chocolate milkshake with cocoa goodness", price: 49, category: "cold-coffee-shakes", image: img(IMG.shake, 0), isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
-  { id: "drink-kitkat-shake", name: "Kit Kat Milk Shake", description: "Blended Kit Kat bar milkshake — crunchy & sweet", price: 49, category: "cold-coffee-shakes", image: img(IMG.shake, 1), isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
-  { id: "drink-strawberry-shake", name: "Strawberry Milk Shake", description: "Fresh strawberry flavored creamy milkshake", price: 49, category: "cold-coffee-shakes", image: img(IMG.shake, 0), isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
-  { id: "drink-butterscotch-shake", name: "Butterscotch Milk Shake", description: "Sweet butterscotch flavored milkshake with crunch", price: 49, category: "cold-coffee-shakes", image: img(IMG.shake, 1), isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
+  { id: "drink-cold-coffee", name: "Cold Coffee Special", description: "Rich & creamy cold coffee blended to perfection", price: 39, category: "cold-coffee-shakes", image: "/images/menu/drink-cold-coffee.png", isVeg: true, sizes: [{ label: "S", price: 39 }, { label: "R", price: 59 }] },
+  { id: "drink-hazelnuts-coffee", name: "Hazelnuts Cold Coffee", description: "Cold coffee with rich hazelnut flavour", price: 49, category: "cold-coffee-shakes", image: "/images/menu/drink-hazelnuts-coffee.png", isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
+  { id: "drink-caramel-coffee", name: "Caramel Cold Coffee", description: "Sweet caramel swirl cold coffee", price: 49, category: "cold-coffee-shakes", image: "/images/menu/drink-caramel-coffee.png", isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
+  { id: "drink-oreo-shake", name: "Oreo Shake", description: "Thick & creamy Oreo cookie milkshake", price: 49, category: "cold-coffee-shakes", image: "/images/menu/drink-oreo-shake.png", isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
+  { id: "drink-vanilla-shake", name: "Vanilla Milk Shake", description: "Classic vanilla milkshake — smooth & creamy", price: 49, category: "cold-coffee-shakes", image: "/images/menu/drink-vanilla-shake.png", isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
+  { id: "drink-chocolate-shake", name: "Chocolate Milk Shake", description: "Rich chocolate milkshake with cocoa goodness", price: 49, category: "cold-coffee-shakes", image: "/images/menu/drink-chocolate-shake.png", isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
+  { id: "drink-kitkat-shake", name: "Kit Kat Milk Shake", description: "Blended Kit Kat bar milkshake — crunchy & sweet", price: 49, category: "cold-coffee-shakes", image: "/images/menu/drink-kitkat-shake.png", isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
+  { id: "drink-strawberry-shake", name: "Strawberry Milk Shake", description: "Fresh strawberry flavored creamy milkshake", price: 49, category: "cold-coffee-shakes", image: "/images/menu/drink-strawberry-shake.png", isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
+  { id: "drink-butterscotch-shake", name: "Butterscotch Milk Shake", description: "Sweet butterscotch flavored milkshake with crunch", price: 49, category: "cold-coffee-shakes", image: "/images/menu/drink-butterscotch-shake.png", isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 69 }] },
 
   // ═══════════════════════════════════════
   // 🍹 MOJITO & ICE TEA (S / R)
   // ═══════════════════════════════════════
-  { id: "drink-mint-mojito", name: "Mint Mojito", description: "Refreshing mint mojito with crushed ice & lime", price: 39, category: "mojito-icetea", image: img(IMG.mojito, 0), isVeg: true, sizes: [{ label: "S", price: 39 }, { label: "R", price: 69 }] },
-  { id: "drink-watermelon-mojito", name: "Watermelon Mojito", description: "Sweet watermelon flavored mojito — summer vibes", price: 49, category: "mojito-icetea", image: img(IMG.mojito, 1), isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 79 }] },
-  { id: "drink-green-apple-mojito", name: "Green Apple Mojito", description: "Tangy green apple mojito with fresh mint", price: 49, category: "mojito-icetea", image: img(IMG.mojito, 0), isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 79 }] },
-  { id: "drink-blueberry-mojito", name: "Blue Berry Mojito", description: "Vibrant blueberry mojito with a refreshing twist", price: 49, category: "mojito-icetea", image: img(IMG.mojito, 1), isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 79 }] },
+  { id: "drink-mint-mojito", name: "Mint Mojito", description: "Refreshing mint mojito with crushed ice & lime", price: 39, category: "mojito-icetea", image: "/images/menu/drink-mint-mojito.png", isVeg: true, sizes: [{ label: "S", price: 39 }, { label: "R", price: 69 }] },
+  { id: "drink-watermelon-mojito", name: "Watermelon Mojito", description: "Sweet watermelon flavored mojito — summer vibes", price: 49, category: "mojito-icetea", image: "/images/menu/drink-watermelon-mojito.png", isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 79 }] },
+  { id: "drink-green-apple-mojito", name: "Green Apple Mojito", description: "Tangy green apple mojito with fresh mint", price: 49, category: "mojito-icetea", image: "/images/menu/drink-green-apple-mojito.png", isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 79 }] },
+  { id: "drink-blueberry-mojito", name: "Blue Berry Mojito", description: "Vibrant blueberry mojito with a refreshing twist", price: 49, category: "mojito-icetea", image: "/images/menu/drink-blueberry-mojito.png", isVeg: true, sizes: [{ label: "S", price: 49 }, { label: "R", price: 79 }] },
   { id: "drink-masala-lemonade", name: "Masala Lemonade Mojito", description: "Indian-style masala lemonade with spicy kick", price: 39, category: "mojito-icetea", image: img(IMG.mojito, 0), isVeg: true, sizes: [{ label: "S", price: 39 }, { label: "R", price: 69 }] },
-  { id: "drink-tangy-mango", name: "Tangy Mango", description: "Sweet & tangy mango drink — tropical refreshment", price: 39, category: "mojito-icetea", image: img(IMG.mojito, 1), isVeg: true, sizes: [{ label: "S", price: 39 }, { label: "R", price: 69 }] },
+  { id: "drink-tangy-mango", name: "Tangy Mango", description: "Sweet & tangy mango drink — tropical refreshment", price: 39, category: "mojito-icetea", image: "/images/menu/drink-tangy-mango.png", isVeg: true, sizes: [{ label: "S", price: 39 }, { label: "R", price: 69 }] },
   { id: "drink-lemon-icetea", name: "Lemon Ice Tea", description: "Chilled lemon-flavored iced tea — refreshing", price: 39, category: "mojito-icetea", image: img(IMG.mojito, 0), isVeg: true, sizes: [{ label: "S", price: 39 }, { label: "R", price: 69 }] },
-  { id: "drink-peach-icetea", name: "Peach Ice Tea", description: "Sweet peach flavored iced tea — cool & fruity", price: 39, category: "mojito-icetea", image: img(IMG.mojito, 1), isVeg: true, sizes: [{ label: "S", price: 39 }, { label: "R", price: 69 }] },
-
-  // ═══════════════════════════════════════
-  // 🎓 STUDENT SPECIAL COMBOS
-  // ═══════════════════════════════════════
-  {
-    id: "student-1",
-    name: "Budget Bites",
-    description: "1 Veg Roll + Veg Momos (Half) + Lemon Ice Tea (S) — perfect pocket-friendly meal",
-    price: 129,
-    category: "student-combos",
-    badge: "🎓 STUDENT",
-    image: img(IMG.combo, 0),
-    isVeg: true,
-  },
-  {
-    id: "student-2",
-    name: "Study Fuel",
-    description: "Aloo Patty Burger + Chilli Potato (Half) + Cold Coffee (S)",
-    price: 149,
-    category: "student-combos",
-    badge: "🎓 STUDENT",
-    image: img(IMG.combo, 1),
-    isVeg: true,
-  },
-  {
-    id: "student-3",
-    name: "Campus Crunch",
-    description: "Any Wrap + Veg Momos Steam (Half) + Mint Mojito (S)",
-    price: 169,
-    category: "student-combos",
-    badge: "🎓 STUDENT",
-    image: img(IMG.combo, 0),
-    isVeg: true,
-  },
-  {
-    id: "student-4",
-    name: "Hostel Special",
-    description: "Veg Noodles (Half) + Honey Chilli Potato (Half) + Cold Drink",
-    price: 179,
-    category: "student-combos",
-    badge: "🎓 STUDENT",
-    image: img(IMG.combo, 1),
-    isVeg: true,
-  },
+  { id: "drink-peach-icetea", name: "Peach Ice Tea", description: "Sweet peach flavored iced tea — cool & fruity", price: 39, category: "mojito-icetea", image: "/images/menu/drink-peach-icetea.png", isVeg: true, sizes: [{ label: "S", price: 39 }, { label: "R", price: 69 }] },
 
   // ═══════════════════════════════════════
   // 💸 EASY MONEY COMBOS
@@ -483,7 +437,6 @@ export const menuItems: MenuItem[] = [
     price: 89,
     category: "easy-money",
     badge: "💸 UNDER ₹99",
-    image: img(IMG.combo, 0),
     isVeg: true,
   },
   {
@@ -493,7 +446,6 @@ export const menuItems: MenuItem[] = [
     price: 99,
     category: "easy-money",
     badge: "💸 VALUE",
-    image: img(IMG.combo, 1),
     isVeg: true,
   },
   {
@@ -503,7 +455,6 @@ export const menuItems: MenuItem[] = [
     price: 149,
     category: "easy-money",
     badge: "💸 VALUE",
-    image: img(IMG.combo, 0),
     isVeg: true,
   },
   {
@@ -513,7 +464,6 @@ export const menuItems: MenuItem[] = [
     price: 179,
     category: "easy-money",
     badge: "💸 VALUE",
-    image: img(IMG.combo, 1),
     isVeg: true,
   },
   {
@@ -523,51 +473,6 @@ export const menuItems: MenuItem[] = [
     price: 129,
     category: "easy-money",
     badge: "💸 VALUE",
-    image: img(IMG.combo, 0),
-    isVeg: true,
-  },
-
-  // ═══════════════════════════════════════
-  // 🎉 PARTY COMBOS
-  // ═══════════════════════════════════════
-  {
-    id: "party-1",
-    name: "Mini Party Pack (4–5 people)",
-    description: "1 Medium Pizza + 1 Full Plate Momos + 4 Mojitos — perfect for small get-togethers",
-    price: 599,
-    category: "party-combos",
-    badge: "🎉 PARTY",
-    image: img(IMG.combo, 1),
-    isVeg: true,
-  },
-  {
-    id: "party-2",
-    name: "House Party Pack (8–10 people)",
-    description: "2 Large Pizzas + 2 Full Plate Momos + Garlic Bread + 4 Shakes + 4 Mojitos",
-    price: 1599,
-    category: "party-combos",
-    badge: "🎉 PARTY",
-    image: img(IMG.combo, 0),
-    isVeg: true,
-  },
-  {
-    id: "party-3",
-    name: "Big Bash Pack (15+ people)",
-    description: "3 Large Pizzas + 4 Plates Momos + 2 Garlic Bread + Chilli Potato + 15 Cold Drinks",
-    price: 2999,
-    category: "party-combos",
-    badge: "🎉 BIG BASH",
-    image: img(IMG.combo, 1),
-    isVeg: true,
-  },
-  {
-    id: "party-4",
-    name: "Birthday Special Pack",
-    description: "Custom party pack + cake arrangement on request — call us to customize!",
-    price: 1999,
-    category: "party-combos",
-    badge: "🎂 BIRTHDAY",
-    image: img(IMG.combo, 0),
     isVeg: true,
   },
 ];

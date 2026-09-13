@@ -21,7 +21,7 @@ const features = [
 ];
 
 const comboCategories = categories.filter((c) =>
-  ["student-combos", "party-combos", "easy-money"].includes(c.id)
+  ["easy-money"].includes(c.id)
 );
 
 export default function HomePage() {
@@ -132,13 +132,7 @@ export default function HomePage() {
                 className="group relative overflow-hidden rounded-lg aspect-[4/5]"
               >
                 <img
-                  src={
-                    cat.id === "student-combos"
-                      ? "https://images.unsplash.com/photo-1627308595229-7830f5c90683?w=600&h=800&fit=crop"
-                      : cat.id === "party-combos"
-                        ? "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600&h=800&fit=crop"
-                        : "https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&h=800&fit=crop"
-                  }
+                  src="https://images.unsplash.com/photo-1550547660-d9450f859349?w=600&h=800&fit=crop"
                   alt={cat.name}
                   className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />

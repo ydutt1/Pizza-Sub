@@ -102,11 +102,13 @@ export default function CartDrawer({ open, onClose }: CartDrawerProps) {
                   key={item.id}
                   className="flex gap-4 p-3 rounded-lg bg-white border border-espresso-700/10"
                 >
-                  <img
-                    src={item.image}
-                    alt={item.name}
-                    className="w-[68px] h-[68px] object-cover rounded"
-                  />
+                  {item.image && (
+                    <img
+                      src={item.image}
+                      alt={item.name}
+                      className="w-[68px] h-[68px] object-cover rounded shrink-0"
+                    />
+                  )}
                   <div className="flex-1 min-w-0 py-0.5">
                     <h3 className="font-medium text-[15px] text-espresso-700 truncate leading-tight mb-1">
                       {item.name}
