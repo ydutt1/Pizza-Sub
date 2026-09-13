@@ -303,14 +303,14 @@ export const menuItems: MenuItem[] = [
   // ═══════════════════════════════════════
   // 🥗 VEG SALADS
   // ═══════════════════════════════════════
-  { id: "salad-exotic-veggie", name: "Exotic Veggie Salad", description: "Fresh garden veggies with a tangy vinaigrette dressing", price: 139, category: "salads", image: img(IMG.salad, 0), isVeg: true },
-  { id: "salad-aloo-patty", name: "Aloo Patty Salad", description: "Crispy aloo patty crumbles on a fresh green salad", price: 159, category: "salads", image: img(IMG.salad, 1), isVeg: true },
-  { id: "salad-paneer-tikka", name: "Paneer Tikka Salad", description: "Grilled paneer tikka pieces on a bed of greens", price: 169, category: "salads", image: img(IMG.salad, 0), isVeg: true },
-  { id: "salad-corn-peas", name: "Corn & Peas Salad", description: "Sweet corn & peas tossed with fresh veggies", price: 159, category: "salads", image: img(IMG.salad, 1), isVeg: true },
-  { id: "salad-hara-bhara", name: "Hara Bhara Kabab Salad", description: "Green kabab crumbles on a nutritious salad bowl", price: 159, category: "salads", image: img(IMG.salad, 0), isVeg: true },
-  { id: "salad-veg-shammi", name: "Veg Shammi Kabab Salad", description: "Shammi kabab pieces with fresh greens & dressing", price: 159, category: "salads", image: img(IMG.salad, 1), isVeg: true },
-  { id: "salad-veg-seekh", name: "Veg Seekh Kabab Salad", description: "Seekh kabab slices on a fresh salad bowl", price: 159, category: "salads", image: img(IMG.salad, 0), isVeg: true },
-  { id: "salad-falafel", name: "Fala Fel Salad", description: "Crispy falafel with hummus on a fresh salad", price: 159, category: "salads", image: img(IMG.salad, 1), isVeg: true },
+  { id: "salad-exotic-veggie", name: "Exotic Veggie Salad", description: "Fresh garden veggies with a tangy vinaigrette dressing", price: 139, category: "salads", isVeg: true },
+  { id: "salad-aloo-patty", name: "Aloo Patty Salad", description: "Crispy aloo patty crumbles on a fresh green salad", price: 159, category: "salads", isVeg: true },
+  { id: "salad-paneer-tikka", name: "Paneer Tikka Salad", description: "Grilled paneer tikka pieces on a bed of greens", price: 169, category: "salads", isVeg: true },
+  { id: "salad-corn-peas", name: "Corn & Peas Salad", description: "Sweet corn & peas tossed with fresh veggies", price: 159, category: "salads", isVeg: true },
+  { id: "salad-hara-bhara", name: "Hara Bhara Kabab Salad", description: "Green kabab crumbles on a nutritious salad bowl", price: 159, category: "salads", isVeg: true },
+  { id: "salad-veg-shammi", name: "Veg Shammi Kabab Salad", description: "Shammi kabab pieces with fresh greens & dressing", price: 159, category: "salads", isVeg: true },
+  { id: "salad-veg-seekh", name: "Veg Seekh Kabab Salad", description: "Seekh kabab slices on a fresh salad bowl", price: 159, category: "salads", isVeg: true },
+  { id: "salad-falafel", name: "Fala Fel Salad", description: "Crispy falafel with hummus on a fresh salad", price: 159, category: "salads", isVeg: true },
 
   // ═══════════════════════════════════════
   // 🍞 SIDES
@@ -524,7 +524,8 @@ export const siteConfig = {
   cafeAddress: "", // Owner will add later
   cafeHours: "11:00 AM - 11:00 PM (All Days)",
   googleReviewsUrl: "https://maps.google.com", // Owner will add actual link
-  googleMapsEmbed: "", // Owner will add later
+  googleMapsUrl: "https://maps.app.goo.gl/VG97rfQPJ1mT6Hqs5?g_st=ic",
+  googleMapsEmbed: "", // Owner can add <iframe> src URL here later if needed
   establishedYear: "2022",
   yearsOfService: 3,
 };

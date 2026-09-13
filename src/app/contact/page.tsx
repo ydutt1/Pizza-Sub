@@ -4,7 +4,7 @@ const contactInfo = [
   {
     label: "Visit us",
     value: siteConfig.cafeAddress || "Address coming soon",
-    link: siteConfig.googleMapsEmbed ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteConfig.cafeAddress)}` : null,
+    link: (siteConfig as any).googleMapsUrl || (siteConfig.googleMapsEmbed ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteConfig.cafeAddress)}` : null),
     linkLabel: "Get directions",
   },
   {
@@ -127,24 +127,35 @@ export default function ContactPage() {
                   className="w-full h-full"
                 />
               ) : (
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-8">
-                  <p className="text-lg font-display text-espresso-700 mb-2">Location map</p>
-                  <p className="text-espresso-500 text-sm">Owner will embed a Google Map here</p>
-                </div>
+                <a
+                  href={(siteConfig as any).googleMapsUrl || "#"}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute inset-0 flex flex-col items-center justify-center text-center p-8 cursor-pointer hover:bg-sand-100 transition-colors group"
+                >
+                  <div className="w-16 h-16 bg-brand-100 text-brand-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-sm">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </svg>
+                  </div>
+                  <p className="text-xl font-display text-espresso-700 mb-2">View Our Location</p>
+                  <p className="text-espresso-500 text-sm underline underline-offset-4 decoration-espresso-200">Click to open Google Maps</p>
+                </a>
               )}
 
               {/* Overlay on map */}
-              <div className="absolute bottom-4 left-4 right-4 p-4 sm:p-5 rounded-lg bg-white border border-espresso-700/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+              <div className="absolute bottom-4 left-4 right-4 p-4 sm:p-5 rounded-lg bg-white border border-espresso-700/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pointer-events-none">
                 <div>
                   <p className="font-display text-base text-espresso-700 mb-0.5">{siteConfig.cafeName}</p>
-                  <p className="text-sm text-espresso-500">{siteConfig.cafeAddress || "Address coming soon"}</p>
+                  <p className="text-sm text-espresso-500">{siteConfig.cafeAddress || "Location Details"}</p>
                 </div>
-                {siteConfig.googleMapsEmbed && (
+                {((siteConfig as any).googleMapsUrl || siteConfig.googleMapsEmbed) && (
                   <a
-                    href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteConfig.cafeAddress)}`}
+                    href={(siteConfig as any).googleMapsUrl || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(siteConfig.cafeAddress)}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-shrink-0 bg-espresso-700 hover:bg-espresso-800 text-white font-medium py-2.5 px-5 rounded text-sm transition-colors"
+                    className="flex-shrink-0 bg-espresso-700 hover:bg-espresso-800 text-white font-medium py-2.5 px-5 rounded text-sm transition-colors pointer-events-auto"
                   >
                     Open in Maps
                   </a>
